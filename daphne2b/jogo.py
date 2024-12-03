@@ -2,9 +2,9 @@ import pygame, random
 
 # Carregando as imagens.
 imagemNave = pygame.image.load('nave.png')
-imagemAsteroide = pygame.image.load('png-transparent-asteroids-meteoroids-meteorite-rock-asteroid-monochrome-solar-system-astronomical-object-thumbnail.png')
-imagemRaio = pygame.image.load('pngtree-thunder-and-bolt-lighting-flash-vector-png-image_4723241.jpg')
-imagemFundo = pygame.image.load('Small_Magellanic_Cloud.png')
+imagemAsteroide = pygame.image.load('asteroides.png')
+imagemRaio = pygame.image.load('raio.jpg')
+imagemFundo = pygame.image.load('magellanic-clouds.png')
 LARGURAJANELA = 600 # largura da janela
 ALTURAJANELA = 600 # altura da janela
 CORTEXTO = (255, 255, 255) # cor do texto (branca)
@@ -70,7 +70,7 @@ imagemFundoRedim = pygame.transform.scale(imagemFundo,(LARGURAJANELA, ALTURAJANE
 fonte = pygame.font.Font(None, 48)
 # Configurando o som.
 somFinal = pygame.mixer.Sound('final_fx.wav')
-somRecorde = pygame.mixer.Sound('record.wa')
+somRecorde = pygame.mixer.Sound('record.wav')
 somTiro = pygame.mixer.Sound('laser.wav')
 pygame.mixer.music.load('trilha_nave.wav')
 # Tela de inicio.
